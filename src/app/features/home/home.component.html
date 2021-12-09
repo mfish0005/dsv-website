@@ -1,0 +1,28 @@
+<h1>This is the home page.</h1>
+<p>
+    The home page is a feature.  Specific features are grouped together in their own modules that live in the src/app/features folder. 
+    See the Angular style guide for more info: https://angular.io/guide/styleguide#feature-modules
+</p>
+
+<p>Grouping components, services, models, etc. into feature modules:</p>
+<ul>
+    <li>Helps us avoid common issues I've run into in past Angular projects</li>
+    <li>Helps with maintainability and structure.</li>
+    <li>Enables us to lazy load modules instead of loading everything at once.</li>
+    <li>Makes moving stuff around later possible with very minimal refactoring(think Lego bricks)</li>    
+</ul> 
+
+<app-header></app-header>
+
+<p>This vehicle info is pulled from the vehicle module in src/app/shared/vehicle.  Since vehicle info could be used by multiple pages/feature modules the Vehicle module lives in src/app/shared.</p>
+<p>{{vehicleCostInfo}}</p>
+
+<p>Having a specific folder for features that are shared between other modules:</p>
+<ul>
+    <li>Gives us a place to put global features</li>
+    <li>Helps keep our code DRY and promotes reusability</li>
+    <li>Keeps our more specific features(like pages) encapsulated within the src/app/features folder</li>
+    <li>Barrels our commonly used components/services together in one place which makes importing them easier</li>   
+</ul> 
+
+<app-button></app-button>
